@@ -1,0 +1,28 @@
+<h2>Log In</h2>
+<br />
+
+<%= form_tag sessions_path do %>
+
+  <div class="control-group string required">
+    <label class="email required control-label" for="user_email">
+      <abbr title="required">*</abbr> Email
+    </label>
+    <div class="controls">
+      <%= text_field_tag :email, params[:email], class: "string email required" %>
+    </div>
+  </div>
+
+  <div class="control-group password required">
+    <label class="password required control-label" for="user_email">
+      <abbr title="required">*</abbr> Password
+    </label>
+    <div class="controls">
+      <%= password_field_tag :password, nil, class: "password required" %>
+    </div>
+  </div>
+
+  <div class="actions">
+    <%= submit_tag "Log in", class: 'btn' %>
+  </div>
+
+<% end %>

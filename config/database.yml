@@ -1,0 +1,16 @@
+production: &defaults
+  adapter: postgresql
+  encoding: unicode
+  database: scrapbook_prod
+  pool: 5
+  username: enbake
+  password: admin
+  host: localhost
+
+development:
+  <<: *defaults
+  database: scrapbook_dev
+
+test:
+  <<: *defaults
+  database: scrapbook_test
