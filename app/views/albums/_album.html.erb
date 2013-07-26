@@ -1,0 +1,7 @@
+<div class="span2 well">
+  <% if album.photos.any? %>
+    <%= link_to image_tag(album.photos.sample.image.url(:medium)), album %>
+  <% else %>
+    <%= link_to image_tag('missing.png', width: '300px', height: '300px'), album %>
+  <% end %>
+</div>

@@ -1,0 +1,23 @@
+<h2 class="text-center">Albums</h2>
+<hr />
+
+<div class="span12">
+  <div class="span10" id="albums-index">
+    <% if @albums %>
+      <%= render @albums %>
+    <% else %>
+      <div class="span6 offset2 well">
+        <h2 class="text-center">Welcome to Scrapbook!</h2>
+        <p class="text-center">You don't have any album yet. You can create one by clicking <b>Add</b> button.</p>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="span1">
+    <%= link_to content_tag(:i, " Add", class: 'icon-plus'), new_album_url, class: 'btn btn-success' %>
+  </div>
+</div>
+
+<div id="paginator">
+ <%= paginate(@albums, theme: 'twitter-bootstrap', pagination_class: "pagination-centered", remote: true) if @albums %>
+</div>
