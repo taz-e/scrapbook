@@ -1,7 +1,21 @@
 <div class="span2 well">
-  <%= image_tag photo.image.url(:medium) %>
+  <%= link_to content_tag(:i, nil, class: 'icon-remove icon-white'), [photo.album, photo], method: :delete, confirm: "Are you sure to remove this Image from this Album?", class: 'btn btn-danger remove-asset float-over' %>
+  <% title = "<h4>#{photo.name}</h4>" %>
+  <% title = photo.tags.blank? ? title : title.concat("<p><b>Tags: </b>#{photo.tags.map(&:title).join(', ')}</p>") %>
+  <%= link_to image_tag(photo.image.url(:medium)), photo.image.url(:large), rel: "lightbox", title: title %>
   <br />
-  <br />
-  <p class="text-center"><%= photo.name.titleize if photo.name %></p>
+  <div>
+    <h4 class="text-center"><%= photo.name.titleize if photo.name %></h4>
+  </div>
   <hr />
+  <% unless photo.tags.blank? %>
+    <b>Tags: </b>
+    <% for tag in photo.tags %>
+      <%= content_tag :span, class: 'badge' do %>
+        <%= tag.title.titleize %>
+        <%= link_to content_tag(:i, nil, class: 'icon-remove icon-white'), [photo.album, photo, tag], class: 'remove-tag'%>
+      <% end %>
+    <% end %>
+    <%= link_to content_tag(:i, '  Add More', class: 'icon-tag'), '#', class: 'btn btn-success btn-mini'%>
+  <% end %>
 </div>

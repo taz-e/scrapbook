@@ -18,7 +18,7 @@ group :assets do
   gem 'therubyracer'
   gem 'less-rails'
   gem 'twitter-bootstrap-rails'
-  gem 'bootstrap-kaminari-views'
+  gem 'bootstrap-kaminari-views', github: 'matenia/bootstrap-kaminari-views'
 end
 
 group :development do

@@ -14,6 +14,7 @@
   </div>
 
   <div class="span1">
-    <%= link_to content_tag(:i, " Add",class: 'icon-plus'), new_album_url, class: 'btn btn-success' %>
+    <%= link_to content_tag(:i, " Add", class: 'icon-plus'), '#new-photo', class: 'btn btn-success', :'data-toggle' => "modal" %>
   </div>
 </div>
+<%= render 'photos/new' %>

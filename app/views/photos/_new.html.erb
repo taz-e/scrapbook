@@ -1,0 +1,15 @@
+<% new_photo = @album.photos.new %>
+<div id="new-photo" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">New Photo</h3>
+  </div>
+  <%= simple_form_for [@album, new_photo] do |f| %>
+  <div class="modal-body">
+    <%= f.input :image, label: false, input_html: {class: 'filestyle', :'data-input' => 'false'}%>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary">Save changes</button>
+  </div>
+  <% end %>
+</div>

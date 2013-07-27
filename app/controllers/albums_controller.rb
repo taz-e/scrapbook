@@ -33,4 +33,9 @@ class AlbumsController < ApplicationController
     respond_with @album, @photos
   end
 
+  def destroy
+    flash[:notice] = "Album deleted Successfully!!"
+    respond_with Album.destroy(params[:id])
+  end
+
 end

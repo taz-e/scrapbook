@@ -7,6 +7,10 @@ Scrapbook::Application.routes.draw do
   get "logout" => "sessions#destroy", :as => "logout"
 
   resources :users
-  resources :albums
+  resources :albums do
+    resources :photos do
+      resources :tags
+    end
+  end
   resources :sessions
 end

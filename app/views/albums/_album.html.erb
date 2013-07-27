@@ -4,4 +4,8 @@
   <% else %>
     <%= link_to image_tag('missing.png', width: '300px', height: '300px'), album %>
   <% end %>
+  <br />
+  <h4 class="text-center"><%= album.name.titleize if album.name %></h4>
+  <p class="text-center"><%= album.photos.count %> Photo(s) inside..</p>
+  <center><%= link_to "Delete Album", album, method: :delete, confirm: "Are you sure to remove this Album and its images?" %></center>
 </div>

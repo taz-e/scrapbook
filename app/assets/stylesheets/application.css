@@ -9,5 +9,27 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require slimbox2
  *= require_tree .
  */
+.float-over {
+  position: absolute;
+  margin-left: -15px;
+  margin-top: -10px;
+}
+
+.remove-tag {
+   color:#FFFFFF;
+}
+
+.remove-tag:hover {
+   color:#FFFFFF;
+}
+
+.rem-tag {
+  cursor:pointer;
+}
+
+.top-10 {
+  margin-top:-10px;
+}

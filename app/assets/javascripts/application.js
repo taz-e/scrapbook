@@ -14,4 +14,9 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require bootstrap-filestyle
+//= require slimbox2
 //= require_tree .
+
+$(document).on('hidden', '#new-photo', function() {
+   $('#new_photo')[0].reset();
+})

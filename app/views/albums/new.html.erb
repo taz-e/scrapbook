@@ -10,7 +10,9 @@
     <div id="uploadPreview" class="span12"></div>
 
     <%= f.simple_fields_for :photos_attributes, multipart: true do |p| %>
-      <%= p.input :image, as: :file, label: false, input_html: {name: 'album[photos_attributes][][image]', class: 'filestyle active_image', :'data-input' => 'false', :'data-classIcon' => 'icon-plus', :'data-classButton' => 'btn btn-success', :'data-buttonText' => 'Add Image'}, wrapper_html: {id: 'add-new-image'}  %>
+	<div id="new-image">
+      <%= p.input :image, as: :file, label: false, input_html: {name: 'album[photos_attributes][0][image]', class: 'filestyle active_image', :'data-input' => 'false', :'data-classIcon' => 'icon-plus', :'data-classButton' => 'btn btn-success', :'data-buttonText' => 'Add Image'}, wrapper_html: {id: 'add-new-image'}  %>
+	  </div>
     <% end %>
 
   <fieldset>
