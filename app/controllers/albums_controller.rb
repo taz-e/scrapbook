@@ -38,4 +38,18 @@ class AlbumsController < ApplicationController
     respond_with Album.destroy(params[:id])
   end
 
+  def update
+    @album = Album.find params[:id]
+
+    respond_to do |format|
+      if @album.update_attributes(params[:album])
+        format.html { redirect_to(:back, :notice => 'Album was successfully updated.') }
+        format.json { respond_with_bip(@album) }
+      else
+        format.html { redirect_to :back }
+        format.json { respond_with_bip(@album) }
+      end
+    end
+  end
+
 end

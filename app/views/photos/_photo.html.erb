@@ -5,17 +5,17 @@
   <%= link_to image_tag(photo.image.url(:medium)), photo.image.url(:large), rel: "lightbox", title: title %>
   <br />
   <div>
-    <h4 class="text-center"><%= photo.name.titleize if photo.name %></h4>
+    <h4 class="text-center"><%= best_in_place [photo.album, photo], :name %></h4>
   </div>
   <hr />
+  <b>Tags: </b>
   <% unless photo.tags.blank? %>
-    <b>Tags: </b>
     <% for tag in photo.tags %>
       <%= content_tag :span, class: 'badge' do %>
         <%= tag.title.titleize %>
         <%= link_to content_tag(:i, nil, class: 'icon-remove icon-white'), [photo.album, photo, tag], class: 'remove-tag'%>
       <% end %>
     <% end %>
-    <%= link_to content_tag(:i, '  Add More', class: 'icon-tag'), '#', class: 'btn btn-success btn-mini'%>
   <% end %>
+  <%= link_to content_tag(:i, '  Add More', class: 'icon-tag'), '#', class: 'btn btn-success btn-mini'%>
 </div>

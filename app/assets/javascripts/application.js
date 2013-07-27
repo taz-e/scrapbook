@@ -15,8 +15,11 @@
 //= require twitter/bootstrap
 //= require bootstrap-filestyle
 //= require slimbox2
+//= require best_in_place
 //= require_tree .
 
 $(document).on('hidden', '#new-photo', function() {
    $('#new_photo')[0].reset();
-})
+});
+
+jQuery(".best_in_place").best_in_place();
