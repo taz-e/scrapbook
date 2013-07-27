@@ -20,8 +20,6 @@ group :assets do
   gem 'less-rails'
   gem 'twitter-bootstrap-rails'
   gem 'bootstrap-kaminari-views', github: 'matenia/bootstrap-kaminari-views'
-  # Need it because of dependency, see https://github.com/matenia/bootstrap-kaminari-views/issues/1
-  gem 'haml'
 end
 
 group :development do
