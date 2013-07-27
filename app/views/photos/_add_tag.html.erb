@@ -1,0 +1,32 @@
+<div id=<%="tag_details_#{photo.id}"%> class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Add More Tags</h3>
+  </div>
+
+  <br/>
+
+  <div class='offset1'>
+    Tags: 
+      <% for tag in photo.tags %>
+        <%= content_tag :span, class: 'badge' do %>
+          <%= tag.title.titleize %>
+          <%= link_to content_tag(:i, nil, class: 'icon-remove icon-white'), [photo.album, photo, tag], class: 'remove-tag'%>
+        <% end %>
+      <% end %>
+  </div>
+  <br />
+  <%= simple_form_for [photo.album, photo] do |f| %>
+    <div class='span2 offset1'>
+      <%= link_to content_tag(:i, ' Add More Tag', class: 'icon-plus'), '#', class: 'add-m-tags', style: 'cursor:pointer;' %>
+    </div>
+
+    <div class="span2">
+      <%= f.submit 'Save Tags', class: 'btn btn-primary center' %>
+    </div>
+
+  <% end %>
+  <br />
+
+</div>

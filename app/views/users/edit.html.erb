@@ -1,10 +1,14 @@
 <h2>Edit User</h2>
-<br />
+<hr />
 
 <%= simple_form_for @user do |f| %>
   <%= f.input :first_name %>
   <%= f.input :last_name %>
   <%= f.input :email %>
 
-  <%= f.submit %>
+  <%= f.submit 'Update User', class: 'btn btn-primary' %>
+
+  <hr />
+
+  <%= link_to "Back to Home Page", root_path %>
 <% end %>

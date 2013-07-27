@@ -1,7 +1,7 @@
 class TagsController < ApplicationController
-
   respond_to :html, :json
 
+  #Define Actions Here
   def new
   end
 

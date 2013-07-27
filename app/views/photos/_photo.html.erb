@@ -17,5 +17,6 @@
       <% end %>
     <% end %>
   <% end %>
-  <%= link_to content_tag(:i, '  Add More', class: 'icon-tag'), '#', class: 'btn btn-success btn-mini'%>
+  <%= link_to content_tag(:i, '  Add More', class: 'icon-tag'), "#tag_details_#{photo.id}", class: 'btn btn-success btn-mini' , :'data-toggle' => "modal" %>
 </div>
+<%= render 'photos/add_tag' , photo: photo %>

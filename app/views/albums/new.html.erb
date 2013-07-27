@@ -2,7 +2,7 @@
 <br />
 
 <%= simple_form_for @album do |f| %>
-  <%= f.input :name %>
+  <%= f.input :name, :input_html => {:required => true} %>
   
   <fieldset>
     <legend>Images</legend>

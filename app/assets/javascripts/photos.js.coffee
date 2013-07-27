@@ -2,6 +2,9 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
+
+#---------To Delete Tag From Photo-----------------
+
 $(document).on 'click', '.remove-tag', (event) ->
   event.preventDefault()
   $remove_btn = $(this).parent()
@@ -19,6 +22,5 @@ $(document).on 'click', '.remove-tag', (event) ->
     error: (e) ->
       $remove_btn.removeClass("disabled")
       alert "error"
-
     beforeSend: ->
       $remove_btn.addClass("disabled")

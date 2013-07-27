@@ -30,7 +30,6 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find params[:id]
-    
 
     if @user.update_attributes(params[:user])
       flash[:notice] = "User updated Successfully!!"

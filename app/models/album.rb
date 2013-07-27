@@ -7,6 +7,7 @@ class Album < ActiveRecord::Base
   belongs_to :user
   has_many :photos, dependent: :destroy
 
+  # For Nested Forms
   accepts_nested_attributes_for :photos, reject_if: proc{|p| p[:image].blank?}
 
 end

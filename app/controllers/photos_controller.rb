@@ -1,7 +1,7 @@
 class PhotosController < ApplicationController
-
   respond_to :html, :json
 
+  # Define Actions Here
   def create
     @album = Album.find params[:album_id]
     @photo = @album.photos.create params[:photo]
@@ -22,7 +22,7 @@ class PhotosController < ApplicationController
 
     respond_to do |format|
       if @photo.update_attributes(params[:photo])
-        format.html { redirect_to(:back, :notice => 'Photo was successfully updated.') }
+        format.html { redirect_to(:back, :notice => 'Tags Added successfully updated.') }
         format.json { respond_with_bip(@photo) }
       else
         format.html { redirect_to :back }

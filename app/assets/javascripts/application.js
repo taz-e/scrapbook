@@ -18,8 +18,13 @@
 //= require best_in_place
 //= require_tree .
 
+
+// To Reset New Photo Modal Box After It Get Close
 $(document).on('hidden', '#new-photo', function() {
    $('#new_photo')[0].reset();
+   $('#new-photo .span2').remove();
 });
 
+// To Load In Place Editor
 jQuery(".best_in_place").best_in_place();
+
