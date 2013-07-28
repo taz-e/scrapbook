@@ -10,4 +10,13 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+
+  def login_as(user)
+    session[:user_id] = user.id
+  end
+
+  def sample_file(filename = "plus.png")
+    File.new("test/fixtures/attachments/#{filename}")
+  end
+
 end

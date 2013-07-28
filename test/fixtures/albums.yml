@@ -1,9 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  name: MyString
-  user: 
+marriage:
+  name: Marriage
+  user: michel
 
-two:
-  name: MyString
-  user: 
+bikes:
+  name: Bikes
+  user: michel
+
+food:
+  name: Food
+  user: paul
+
+cars:
+  name: Cars
+  user: paul

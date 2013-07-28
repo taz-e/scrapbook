@@ -1,9 +1,33 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  name: MyString
-  albums: 
+marriage1:
+  name: Marriage1
+  album: marriage
 
-two:
-  name: MyString
-  albums: 
+marriage2:
+  name: Marriage2
+  album: marriage
+
+cars1:
+  name: Cars1
+  album: cars
+  
+cars2:
+  name: Cars2
+  album: cars
+
+food1:
+  name: Food1
+  album: food
+
+food2:
+  name: Food2
+  album: food
+
+bikes1:
+  name: Bikes1
+  album: bikes
+
+bikes2:
+  name: Bikes2
+  album: bikes

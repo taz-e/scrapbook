@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  first_name: MyString
-  last_name: MyString
-  email: MyString
+michel:
+  first_name: Michel
+  last_name: Jones
+  email: mich@example.com
   password_digest: MyString
   last_login: 
   login_count: 1
@@ -11,10 +11,10 @@ one:
   password_reset_token: MyString
   password_reset_sent_at: 2013-07-23 17:58:56
 
-two:
-  first_name: MyString
-  last_name: MyString
-  email: MyString
+paul:
+  first_name: Paul
+  last_name: Hess
+  email: hess@example.com
   password_digest: MyString
   last_login: 
   login_count: 1

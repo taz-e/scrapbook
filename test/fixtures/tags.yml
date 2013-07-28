@@ -1,9 +1,33 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  title: MyString
-  photo: 
+marriage1_tag:
+  title: Nice Marriage
+  photo: marriage1
 
-two:
-  title: MyString
-  photo: 
+marriage2_tag:
+  title: Lovely Wedding
+  photo: marriage2
+
+food1_tag:
+  title: Tasty
+  photo: food1
+
+food2_tag:
+  title: Yummy
+  photo: food2
+
+cars1_tag:
+  title: Nice Design
+  photo: cars1
+
+cars2_tag:
+  title: Ultimate
+  photo: cars2
+
+bikes1_tag:
+  title: Nice Design
+  photo: bikes1
+
+bikes2_tag:
+  title: Ultimate
+  photo: bikes2
