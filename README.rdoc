@@ -9,21 +9,23 @@ The Main Functionality in this application is to create Album, its photos and
 thier tags using nested forms and accepts_nested_attributes_for. The Various
 Gems/Plugins used by me in this application are:
 
-- [x] pg
-- [x] bcrypt-ruby
-- [x] simple_form
-- [x] paperclip
-- [x] kaminari
-- [x] twitter-bootstrap-rails
-- [x] best_in_place
+[x] pg
+[x] bcrypt-ruby
+[x] simple_form
+[x] paperclip
+[x] kaminari
+[x] twitter-bootstrap-rails
+[x] best_in_place
 
-- [x] bootstrap-filestyle
-- [x] slimbox2
+[x] bootstrap-filestyle
+[x] slimbox2
 
 The above 7 are ruby gems and the last two are jquery plugins. You can check
-it live at http://scrapbook-tp.herokuapp.com/
+it live at:
+http://scrapbook-tp.herokuapp.com/
 
 Please Feel Free to Open issues here at Github or contact me at:-
 
 Email: tajinder.fzr@gmail.com
-Contact: +91-9878578085
+
+Phone: +91-9878578085
