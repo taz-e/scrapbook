@@ -22,7 +22,7 @@ class PhotosController < ApplicationController
 
     respond_to do |format|
       if @photo.update_attributes(params[:photo])
-        format.html { redirect_to(:back, :notice => 'Tags Added successfully updated.') }
+        format.html { redirect_to(:back, :notice => 'Tags Added Successfully.') }
         format.json { respond_with_bip(@photo) }
       else
         format.html { redirect_to :back }
