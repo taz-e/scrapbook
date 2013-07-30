@@ -1,0 +1,14 @@
+development: &defaults
+  s3_creds:
+    :secret_access_key: #AWS Secret
+    :access_key_id: #AWS Key
+  s3_bucket: scrapbook-dev
+production:
+  <<: *defaults
+  s3_bucket: scrapbook-prod
+staging:
+  <<: *defaults
+  s3_bucket: scrapbook-staging
+test:
+  <<: *defaults
+  s3_bucket: scrapbook-test

@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'simple_form'
 gem 'paperclip', '~> 3.0'
+gem 'aws-sdk'
 gem 'kaminari'
 gem 'best_in_place'
 

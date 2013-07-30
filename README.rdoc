@@ -16,11 +16,14 @@ Gems/Plugins used by me in this application are:
 5. kaminari
 6. twitter-bootstrap-rails
 7. best_in_place
+8. aws-sdk
 
 8. bootstrap-filestyle
 9. slimbox2
 
-The above 7 are ruby gems and the last two are jquery plugins.
+The above 8 are ruby gems and the last two are jquery plugins. The storage used
+is Amazon S3, Put your keys and bucket names in config/config.yml file to get it
+running.
 
 * This application is deployed on heroku: http://scrapbook-tp.herokuapp.com/
 
